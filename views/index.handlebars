@@ -1,0 +1,18 @@
+<div class="container-fluid article-container">
+    {{#each datos}}
+    <div data-id="{{_id}}" class="card">
+        <div class="card-header">
+            <h4>
+                <p data-id="{{_id}}">{{title}}</p>
+                <p>{{link}}</p>
+                <p>{{saved}}</p>
+                <button class="savedArticle" data-articleid="{{this._id}}">Save</button>
+            </h4>
+        </div>
+        {{/each}}
+        <div id="notes"></div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js"></script>
